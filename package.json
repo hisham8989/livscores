@@ -1,0 +1,24 @@
+{
+  "name": "livescrores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "nodemon backend/server.js",
+    "start": "nodemon backend/server.js && cd frontend && npm run dev",
+    "local-start-backend": "SET NODE_ENV=local && node backend/server.js",
+    "local-start-frontend": "cd frontend && npm run dev",
+    "local-dev": "SET NODE_ENV=local && nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
