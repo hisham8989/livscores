@@ -1,13 +1,19 @@
-
 ## Run Locally
 
-### Note 
+### Note
+
 - run mongod daemon process by running mongod in cmd
 - if mongod is not installed then you can download https://www.mongodb.com/try/download/community
 
 - add path C:\Program Files\MongoDB\Server\{version}\bin to the envronments
 
-Alternatively , you can add mongo db cloud url in config/environment.js 
+Alternatively , you can add mongo db cloud url in config/environment.js
+
+Clone a project
+
+```bash
+  git clone hisham8989/livscores
+```
 
 Go to the project directory
 
@@ -47,7 +53,6 @@ Start the frontend from root directory
   GET http://localhost:3001/api/v1/scores
 ```
 
-
 #### Create Score
 
 ```http
@@ -56,15 +61,12 @@ Start the frontend from root directory
 
 | Body (application/json) | Type     | Description   |
 | :---------------------- | :------- | :------------ |
-| `batting`                  | `string` | **Required**. |
-| `bowling`                 | `string` | **Required**. |
-| `runs`              | `string` | **Required**. |
-| `oversLeft`                  | `string` | **Required**. |
-| `wicketsLeft`                 | `string` | **Required**. |
-| `matchFormat`              | `string` | **Required**. |
-| `innings`              | `string` | **Required**. |
-| `teams`                  | `string` | **Required**. |
-| `sportName`                 | `string` | **Required**. |
-
-
-
+| `batting`               | `string` | **Required**. |
+| `bowling`               | `string` | **Required**. |
+| `runs`                  | `string` | **Required**. |
+| `oversLeft`             | `string` | **Required**. |
+| `wicketsLeft`           | `string` | **Required**. |
+| `matchFormat`           | `string` | **Required**. |
+| `innings`               | `string` | **Required**. |
+| `teams`                 | `string` | **Required**. |
+| `sportName`             | `string` | **Required**. |
